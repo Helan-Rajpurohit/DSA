@@ -6,9 +6,9 @@ using namespace std;
 // Node class for singly linked list 
 class Node 
 { 
-    public: int data; 
-    // Data in the node 
-    Node* next; // Pointer to next node 
+    public: 
+        int data; // Data in the node 
+        Node* next; // Pointer to next node
 
     // Constructor initializes the data and sets next to nullptr 
     Node(int val) 
@@ -17,23 +17,21 @@ class Node
         next = nullptr; 
     } 
 }; 
-
 // LinkedList class to manage list operations 
 class LinkedList 
 { 
     Node* head; // Pointer to the head of the list 
     public:
-    LinkedList() 
-    { 
-        head = nullptr; // Constructor initializes head to null 
-    } 
-    void insertAtBeginning(int val); 
-    void insertAtEnd(int val); 
-    void deleteFromBeginning(); 
-    void deleteFromEnd(); 
-    void display(); 
+        LinkedList() 
+        { 
+            head = nullptr; // Constructor initializes head to null 
+        } 
+        void insertAtBeginning(int val); 
+        void insertAtEnd(int val); 
+        void deleteFromBeginning(); 
+        void deleteFromEnd(); 
+        void display(); 
 }; 
-
 // Insert at beginning of list 
 void LinkedList::insertAtBeginning(int val) 
 { 
