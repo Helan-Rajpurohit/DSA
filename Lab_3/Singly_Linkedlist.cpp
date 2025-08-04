@@ -1,18 +1,20 @@
 //singlylinkedlist.cpp 
 #include <iostream> 
-using namespace std; 
+using namespace std;
+
 // Node class for singly linked list 
 class Node 
 { 
     public: 
-    int data; // Data in the node 
-    Node* next; // Pointer to next node
-    // Constructor initializes the data and sets next to nullptr 
-    Node(int val) 
-    { 
+        int data; // Data in the node 
+        Node* next; // Pointer to next node
+        
+        // Constructor initializes the data and sets next to nullptr 
+        Node(int val) 
+        { 
         data = val; 
         next = nullptr; 
-    } 
+        } 
 }; 
 // LinkedList class to manage list operations 
 class LinkedList 
@@ -43,8 +45,7 @@ void LinkedList::insertAtEnd(int val)
     Node* newNode = new Node(val); // allocate new node 
     if (!head) 
     {
-         head = newNode; 
-         // if list is empty 
+         head = newNode; // if list is empty 
          return; 
     } 
     Node* temp = head; 
