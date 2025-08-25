@@ -110,7 +110,7 @@ void LinkedList::display()
     } 
     cout << "NULL\n"; 
 } 
-// Main function with menu 
+// Main function
 int main()
 { 
     LinkedList list; 
@@ -128,4 +128,5 @@ int main()
     list.deleteFromEnd(); 
     list.display(); 
     return 0; 
+
 }
