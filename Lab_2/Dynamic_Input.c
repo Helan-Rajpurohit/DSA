@@ -6,7 +6,11 @@ int main()
     scanf("%d",&row);
     printf("Enter no. of  columns :");
     scanf("%d",&col);
+
+    //2D array declaration
     int arr[row][col];
+
+    //elements input from user
     printf("Enter elements of Matrix ");
     for(i=0;i<row;i++)
     {
@@ -16,6 +20,8 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
+    
+    //printing elements of matrix
     printf("Matrix is: \n");
     for(i=0;i<row;i++)
     {
@@ -26,5 +32,6 @@ int main()
         printf("\n");
     }
     return 0;
+
 
 }
