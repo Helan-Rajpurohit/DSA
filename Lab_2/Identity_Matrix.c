@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int arr[4][4]={0};
+    int arr[4][4]={0}; //4x4 zero matrix
     int i,j;
     for(i=0;i<4;i++)
     {
@@ -9,11 +9,13 @@ int main()
         {
             if(i==j)
             {
-                arr[i][j]=1;
+                arr[i][j]=1;  // set diagonal elements as 1
 
             }
         }
     }
+
+    // element print
     printf("4x4 Identity Matrix\n");
     for(i=0;i<4;i++)
     {
@@ -24,5 +26,6 @@ int main()
         printf("\n");
     }
     return 0;
+
 
 }
