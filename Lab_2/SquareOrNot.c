@@ -6,7 +6,11 @@ int main()
     scanf("%d",&row);
     printf("Enter no. of  columns :");
     scanf("%d",&col);
+
+    //2D array declaration
     int arr[row][col];
+
+    //input elements
     printf("Enter elements of Matrix ");
     for(i=0;i<row;i++)
     {
@@ -16,6 +20,7 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
+    //check for square matrix
     if(row==col)
             {
                 printf("Matrix is Square\n");
@@ -24,6 +29,8 @@ int main()
             {
                 printf("Matrix is not Square\n ");
             }
+
+    //print elements
     for(i=0;i<row;i++)
     {
         for(j=0;j<col;j++)
@@ -33,5 +40,6 @@ int main()
         printf("\n");
     }
     return 0;
+
 
 }
