@@ -10,7 +10,7 @@ public:
     DNode(int value) 
     {
         data = value;
-        prev = ;
+        prev = NULL;
         next = NULL;
     }
 };
@@ -296,4 +296,5 @@ int main()
         }
     }
     return 0;
+
 }
