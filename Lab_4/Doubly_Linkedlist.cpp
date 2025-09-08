@@ -68,7 +68,7 @@ public:
         DNode* temp = head;
         for (int i = 0; i < pos - 1; i++) 
         {
-            if (temp == nullptr) 
+            if (temp == NULL) 
             {
                 cout << "Invalid position!\n";
                 delete newNode;
@@ -298,3 +298,4 @@ int main()
     return 0;
 
 }
+
